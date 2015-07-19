@@ -1,0 +1,14 @@
+Motor KEYWORD1
+moveMotor KEYWORD2
+run KEYWORD2
+turn KEYWORD2
+stop KEYWORD2
+US KEYWORD1
+getDistance KEYWORD2
+Sharp KEYWORD1
+DigitalOutput KEYWORD1
+setState KEYWORD2
+DigitalInput KEYWORD1
+getState KEYWORD2
+AnalogicInput KEYWORD1
+getValue KEYWORD2
