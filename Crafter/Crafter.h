@@ -5,15 +5,14 @@
 	Library implemented by:
 	-Gabriel Bandeira
 	e-mail: gmb@cin.ufpe.br
-	github: github.com/gmbandeira
+	github: github.com/gabriel-bandeira
 
 	Using Sharp Sensor Filter implemented by:
 	Ivan Seidel
 	github: github.com/ivanseidel
 
 	Get to know the project and the ones responsible for it at:
-	www.projetocrafter.com.br
-	###@robolivre.org
+	crafterproject.weebly.com
 
 	+ DC Motors Interface
 	+ Digital Ultrassonic Interface (HC-SR04)
@@ -67,7 +66,7 @@ public:
 	Motor();
 	// Class constructor using custom motor ports
 	Motor(char m1f, char m1b, char m2f, char m2b);
-	// Move one motor in the chosen speed. [motor = M1 | M2] [-100 < speed < 100]
+	// Move one motor in the chosen speed. [motor = M1 | M2] [-255 < speed < 255]
 	void moveMotor(MOTOR motor, int speed);
 	// Move the entire robot forward or backwards. [-100 < Speed < 100]
 	void run(int speed);
