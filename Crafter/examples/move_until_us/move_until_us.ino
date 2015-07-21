@@ -2,9 +2,9 @@
 #include <Crafter.h>
 
 // M1-forward, M1-backwards, M2-forward, M2-backwards
-Motor motor (6, 7, 8, 9);
+Motor motor (6, 7, 11, 12);
 // trig, echo
-US us(11, 12);
+US us(4, 5);
 
 void setup()
 {
