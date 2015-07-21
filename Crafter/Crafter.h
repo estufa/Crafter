@@ -37,7 +37,7 @@
 
 // Headers
 #include <Arduino.h>		// Arduino functions like pinMode
-#include <Servo.h>			// Arduino servo interface
+//#include <Servo.h>		// Arduino servo interface
 
 
 // Definitions

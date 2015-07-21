@@ -26,25 +26,25 @@ void Motor::moveMotor(MOTOR motor, int speed)
 	case M1:
 		if (speed >= 0)
 		{
-			analogWrite(_m1_f, speed);
+			analogWrite(_m1_f, speed*2.55);
 			analogWrite(_m1_b, 0);
 		}
 		else
 		{
 			analogWrite(_m1_f, 0);
-			analogWrite(_m1_b, -speed);
+			analogWrite(_m1_b, -(speed*2.55));
 		}
 		break;
 	case M2:
 		if (speed >= 0)
 		{
-			analogWrite(_m2_f, speed);
+			analogWrite(_m2_f, speed*2.55);
 			analogWrite(_m2_b, 0);
 		}
 		else
 		{
 			analogWrite(_m2_f, 0);
-			analogWrite(_m2_b, -speed);
+			analogWrite(_m2_b, -(speed*2.55));
 		}
 		break;
 	}
@@ -57,8 +57,8 @@ void Motor::run(int speed)
 	if(speed < -100)
 		speed = -100;
 
-	this->moveMotor(M1, speed*2.55);
-	this->moveMotor(M2, speed*2.55);
+	this->moveMotor(M1, speed);
+	this->moveMotor(M2, speed);
 }
 
 void Motor::turn(int speed)
@@ -68,8 +68,8 @@ void Motor::turn(int speed)
 	if(speed < -100)
 		speed = -100;
 
-	this->moveMotor(M1, speed*2.55);
-	this->moveMotor(M2, -(speed*2.55));
+	this->moveMotor(M1, speed);
+	this->moveMotor(M2, -speed);
 }
 
 void Motor::stop(MOTOR motor)
